@@ -250,6 +250,9 @@ Output:
 
 ## Changelog
 
+commit f5fa9399dbcbfaecc2c0f4bcc7f5096844dd2d01
+Fix negative values processing
+
 commit e924b64f604bb43371287d30a406261f2d303188
 Add docs
 
