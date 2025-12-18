@@ -22,4 +22,4 @@ def perimeter(a):
         Return value:
             square_perimeter (float): square perimeter
     '''
-    return 4 * a
+    return 4 * abs(a)

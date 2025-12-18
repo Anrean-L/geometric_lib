@@ -9,7 +9,7 @@ def area(a, b):
         Return value:
             rectangle_area (float): rectangle area
     '''
-    return a * b
+    return abs(a * b)
 
 def perimeter(a, b):
     '''
@@ -22,4 +22,4 @@ def perimeter(a, b):
         Return value:
             rectangle_perimeter (float): rectangle perimeter
     '''
-    return (a + b) * 2
+    return (abs(a) + abs(b)) * 2

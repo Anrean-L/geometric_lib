@@ -250,6 +250,9 @@ Output:
 
 ## Changelog
 
+commit e924b64f604bb43371287d30a406261f2d303188
+Add docs
+
 commit e1744f9cbee576c0eb83183aee597cdc68a660df
 Fix bug in rectangle perimeter calculation
 

@@ -24,4 +24,4 @@ def perimeter(r):
         Return value:
             circle_perimeter (float): circle perimeter
     '''
-    return 2 * math.pi * r
+    return 2 * math.pi * abs(r)

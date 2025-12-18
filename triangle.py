@@ -9,7 +9,7 @@ def area(a, h):
         Return value:
             triangle_area (float): triangle area
     '''
-    return a * h / 2
+    return abs(a * h / 2)
 
 def perimeter(a, b, c):
     '''
@@ -23,4 +23,4 @@ def perimeter(a, b, c):
         Return value:
             triangle_perimeter (float): triangle perimeter
     '''
-    return a + b + c
+    return abs(a) + abs(b) + abs(c)
