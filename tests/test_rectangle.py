@@ -53,3 +53,11 @@ class RectangleTestCase(unittest.TestCase):
     def test_negative_perimeter(self):
         res = rectangle.perimeter(12, -34.5)
         self.assertAlmostEqual(res, 93)
+
+    def test_invalid_type_area(self):
+        with self.assertRaises(TypeError):
+            rectangle.area("930", 29)
+
+    def test_invalid_type_perimeter(self):
+        with self.assertRaises(TypeError):
+            rectangle.perimeter(None)

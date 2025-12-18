@@ -41,3 +41,11 @@ class TriangleTestCase(unittest.TestCase):
     def test_negative_side_perimeter(self):
         res = triangle.perimeter(-4, -5, 3)
         self.assertEqual(res, 12)
+
+    def test_invalid_type_area(self):
+        with self.assertRaises(TypeError):
+            triangle.perimeter("123", "8429")
+
+    def test_invalid_type_perimeter(self):
+        with self.assertRaises(TypeError):
+            triangle.perimeter("123", "8429", "8482")

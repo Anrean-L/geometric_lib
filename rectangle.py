@@ -9,6 +9,9 @@ def area(a, b):
         Return value:
             rectangle_area (float): rectangle area
     '''
+    if (not isinstance(a, int) and not isinstance(a, float) or \
+        not isinstance(b, int) and not isinstance(b, float)):
+        raise TypeError("Sides of rectangle must be numbers")
     return abs(a * b)
 
 def perimeter(a, b):
@@ -22,4 +25,7 @@ def perimeter(a, b):
         Return value:
             rectangle_perimeter (float): rectangle perimeter
     '''
+    if (not isinstance(a, int) and not isinstance(a, float) or \
+        not isinstance(b, int) and not isinstance(b, float)):
+        raise TypeError("Sides of rectangle must be numbers")
     return (abs(a) + abs(b)) * 2

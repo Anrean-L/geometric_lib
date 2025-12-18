@@ -33,3 +33,11 @@ class CircleTestCase(unittest.TestCase):
     def test_negative_radius_perimeter(self):
         res = circle.perimeter(-4)
         self.assertAlmostEqual(res, 25.1327412)
+
+    def test_invalid_type_perimeter(self):
+        with self.assertRaises(TypeError):
+            circle.perimeter("test")
+
+    def test_invalid_type_perimeter(self):
+        with self.assertRaises(TypeError):
+            circle.perimeter("asdf")

@@ -9,6 +9,9 @@ def area(a, h):
         Return value:
             triangle_area (float): triangle area
     '''
+    if (not isinstance(a, int) and not isinstance(a, float) or \
+        not isinstance(h, int) and not isinstance(h, float)):
+        raise TypeError("Side and height of triangle must be numbers")
     return abs(a * h / 2)
 
 def perimeter(a, b, c):
@@ -23,4 +26,8 @@ def perimeter(a, b, c):
         Return value:
             triangle_perimeter (float): triangle perimeter
     '''
+    if (not isinstance(a, int) and not isinstance(a, float) or \
+        not isinstance(b, int) and not isinstance(b, float) or \
+        not isinstance(c, int) and not isinstance(c, float)):
+        raise TypeError("Sides of triangle must be numbers")
     return abs(a) + abs(b) + abs(c)

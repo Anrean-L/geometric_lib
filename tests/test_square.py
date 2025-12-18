@@ -33,3 +33,11 @@ class SquareTestCase(unittest.TestCase):
     def test_negative_side_perimeter(self):
         res = square.perimeter(-4)
         self.assertEqual(res, 16)
+
+    def test_invalid_type_area(self):
+        with self.assertRaises(TypeError):
+            square.perimeter("test")
+
+    def test_invalid_type_perimeter(self):
+        with self.assertRaises(TypeError):
+            square.perimeter("test")

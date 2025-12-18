@@ -11,6 +11,8 @@ def area(r):
         Return value:
             circle_area (float): circle area
     '''
+    if (not isinstance(r, int) and not isinstance(r, float)):
+        raise TypeError("Radius of circle must be number")
     return math.pi * r * r
 
 
@@ -24,4 +26,6 @@ def perimeter(r):
         Return value:
             circle_perimeter (float): circle perimeter
     '''
+    if (not isinstance(r, int) and not isinstance(r, float)):
+        raise TypeError("Radius of circle must be number")
     return 2 * math.pi * abs(r)

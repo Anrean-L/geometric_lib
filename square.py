@@ -9,6 +9,8 @@ def area(a):
         Return value:
             square_area (float): square area
     '''
+    if (not isinstance(a, int) and not isinstance(a, float)):
+        raise TypeError("Side of square must be number")
     return a * a
 
 
@@ -22,4 +24,6 @@ def perimeter(a):
         Return value:
             square_perimeter (float): square perimeter
     '''
+    if (not isinstance(a, int) and not isinstance(a, float)):
+        raise TypeError("Side of square must be number")
     return 4 * abs(a)
