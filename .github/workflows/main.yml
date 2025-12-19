@@ -1,0 +1,35 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main", "new_features_501853" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions: 
+  contents: read
+
+jobs:
+  ubuntu_build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14.2"
+
+      - name: Run tests
+        run: python -m unittest discover
+
+  windows_build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.14.2"
+
+      - name: Run tests
+        run: python -m unittest discover
